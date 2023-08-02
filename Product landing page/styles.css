@@ -22,6 +22,7 @@ header{
     justify-content: space-around;
     align-items: center;
     background-color: #eee;
+    width: 100vw;
 }
 .logo{
     width: 60vw;
@@ -216,4 +217,66 @@ footer > span{
     color:black;
     font-size:0.9em;
     margin-top: 5px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px), screen and (min-width: 600px) {
+    header{
+        flex-direction: column;
+    }
+    
+    nav > ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero{
+        margin-top: 100px;
+    }
+
+    #pricing {
+        flex-direction: column;
+        }
+
+    .product {
+        width: auto;
+    }
+
+    .logo {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    .logo > img{
+        margin-left: 0px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {  
+
+    header{
+        flex-direction: row;
+    }
+    nav > ul{
+        flex-direction: row;
+    }
+
+    .hero{
+        margin-top: 75px;
+    }
+
+    #pricing{
+        flex-direction: row;
+    }
+
+    .product {
+        width: calc(100% / 3);
+    }
+
+    .logo {
+        width: 100vw;
+        display: flex;
+        justify-content: left;
+    }
 }
